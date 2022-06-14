@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E5020FCD28594EB7004259A4 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5020FCC28594EB7004259A4 /* FeedTableViewCell.swift */; };
+		E5020FCF28595427004259A4 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5020FCE28595427004259A4 /* Icon.swift */; };
 		E512A7B8285841980092F3F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E512A7B7285841980092F3F4 /* AppDelegate.swift */; };
 		E512A7BA285841980092F3F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E512A7B9285841980092F3F4 /* SceneDelegate.swift */; };
 		E512A7BC285841980092F3F4 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E512A7BB285841980092F3F4 /* TabBarViewController.swift */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E5020FCC28594EB7004259A4 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		E5020FCE28595427004259A4 /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
 		E512A7B4285841980092F3F4 /* Twitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E512A7B7285841980092F3F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E512A7B9285841980092F3F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -154,6 +158,7 @@
 			children = (
 				E512A7FA28585A030092F3F4 /* TabBar */,
 				E512A7F72858532A0092F3F4 /* Feed */,
+				E5020FCE28595427004259A4 /* Icon.swift */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 			children = (
 				E512A7F3285853150092F3F4 /* FeedViewController.swift */,
 				E512A7F5285853210092F3F4 /* FeedPresenter.swift */,
+				E5020FCC28594EB7004259A4 /* FeedTableViewCell.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -329,6 +335,8 @@
 				E512A7EE2858452B0092F3F4 /* User.swift in Sources */,
 				E512A7EB285845170092F3F4 /* Tweet.swift in Sources */,
 				E512A7F4285853150092F3F4 /* FeedViewController.swift in Sources */,
+				E5020FCD28594EB7004259A4 /* FeedTableViewCell.swift in Sources */,
+				E5020FCF28595427004259A4 /* Icon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
