@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		E512A7B8285841980092F3F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E512A7B7285841980092F3F4 /* AppDelegate.swift */; };
 		E512A7BA285841980092F3F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E512A7B9285841980092F3F4 /* SceneDelegate.swift */; };
-		E512A7BC285841980092F3F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E512A7BB285841980092F3F4 /* ViewController.swift */; };
+		E512A7BC285841980092F3F4 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E512A7BB285841980092F3F4 /* TabBarViewController.swift */; };
 		E512A7C12858419A0092F3F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E512A7C02858419A0092F3F4 /* Assets.xcassets */; };
 		E512A7C42858419A0092F3F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E512A7C22858419A0092F3F4 /* LaunchScreen.storyboard */; };
 		E512A7CF2858419A0092F3F4 /* TwitterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E512A7CE2858419A0092F3F4 /* TwitterTests.swift */; };
@@ -19,6 +19,9 @@
 		E512A7EB285845170092F3F4 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E512A7EA285845170092F3F4 /* Tweet.swift */; };
 		E512A7EE2858452B0092F3F4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E512A7ED2858452B0092F3F4 /* User.swift */; };
 		E512A7F1285846BA0092F3F4 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E512A7F0285846BA0092F3F4 /* UserDefaultsManager.swift */; };
+		E512A7F4285853150092F3F4 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E512A7F3285853150092F3F4 /* FeedViewController.swift */; };
+		E512A7F6285853210092F3F4 /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E512A7F5285853210092F3F4 /* FeedPresenter.swift */; };
+		E512A7F9285859FA0092F3F4 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E512A7F8285859FA0092F3F4 /* TabBarItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +45,7 @@
 		E512A7B4285841980092F3F4 /* Twitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E512A7B7285841980092F3F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E512A7B9285841980092F3F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E512A7BB285841980092F3F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E512A7BB285841980092F3F4 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		E512A7C02858419A0092F3F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E512A7C32858419A0092F3F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E512A7C52858419A0092F3F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +57,9 @@
 		E512A7EA285845170092F3F4 /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 		E512A7ED2858452B0092F3F4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E512A7F0285846BA0092F3F4 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		E512A7F3285853150092F3F4 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		E512A7F5285853210092F3F4 /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
+		E512A7F8285859FA0092F3F4 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +152,8 @@
 		E512A7EF2858452F0092F3F4 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				E512A7BB285841980092F3F4 /* ViewController.swift */,
+				E512A7FA28585A030092F3F4 /* TabBar */,
+				E512A7F72858532A0092F3F4 /* Feed */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -157,6 +164,24 @@
 				E512A7F0285846BA0092F3F4 /* UserDefaultsManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		E512A7F72858532A0092F3F4 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				E512A7F3285853150092F3F4 /* FeedViewController.swift */,
+				E512A7F5285853210092F3F4 /* FeedPresenter.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		E512A7FA28585A030092F3F4 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				E512A7F8285859FA0092F3F4 /* TabBarItem.swift */,
+				E512A7BB285841980092F3F4 /* TabBarViewController.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,12 +320,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E512A7BC285841980092F3F4 /* ViewController.swift in Sources */,
+				E512A7BC285841980092F3F4 /* TabBarViewController.swift in Sources */,
 				E512A7B8285841980092F3F4 /* AppDelegate.swift in Sources */,
+				E512A7F6285853210092F3F4 /* FeedPresenter.swift in Sources */,
+				E512A7F9285859FA0092F3F4 /* TabBarItem.swift in Sources */,
 				E512A7F1285846BA0092F3F4 /* UserDefaultsManager.swift in Sources */,
 				E512A7BA285841980092F3F4 /* SceneDelegate.swift in Sources */,
 				E512A7EE2858452B0092F3F4 /* User.swift in Sources */,
 				E512A7EB285845170092F3F4 /* Tweet.swift in Sources */,
+				E512A7F4285853150092F3F4 /* FeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
