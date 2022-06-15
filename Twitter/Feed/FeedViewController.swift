@@ -31,7 +31,6 @@ final class FeedViewController: UIViewController {
     }
 }
 
-
 extension FeedViewController: FeedProtocol {
     func setupViews() {
         navigationItem.title = "Feed"

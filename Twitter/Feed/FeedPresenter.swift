@@ -34,7 +34,8 @@ extension FeedPresenter: UITableViewDataSource {
             for: indexPath
         ) as? FeedTableViewCell
         
-        cell?.textLabel?.text = "\(indexPath)"
+        let tweet = Tweet(user: User.shared, contents: "Hi")
+        cell?.setup(tweet: tweet)
         
         return cell ?? UITableViewCell()
     }

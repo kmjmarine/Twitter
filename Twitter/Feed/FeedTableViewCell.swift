@@ -65,6 +65,16 @@ final class FeedTableViewCell: UITableViewCell {
         
         return button
     }()
+    
+    func setup(tweet: Tweet) {
+        self.selectionStyle = .none
+        
+        setupLayout()
+        
+        writerNameLabel.text = tweet.user.name
+        writerIDLabel.text = "@\(tweet.user.id)"
+        contentsLabel.text = tweet.contents
+    }
 }
 
 private extension FeedTableViewCell {
@@ -80,6 +90,38 @@ private extension FeedTableViewCell {
             contentsLabel,
             buttonStackView
         ]
-            .forEach { self.addSubview($0) }
+            .forEach { addSubview($0) }
+        
+        let superviewMargin: CGFloat = 16.0
+        
+        profileImageView.snp.makeConstraints {
+            $0.leading.equalToSuperview().inset(superviewMargin)
+            $0.top.equalToSuperview().inset(superviewMargin)
+            $0.width.equalTo(40.0)
+            $0.height.equalTo(40.0)
+        }
+        
+        writerNameLabel.snp.makeConstraints {
+            $0.leading.equalTo(profileImageView.snp.trailing).offset(superviewMargin)
+            $0.top.equalTo(profileImageView.snp.top)
+        }
+        
+        writerIDLabel.snp.makeConstraints {
+            $0.leading.equalTo(writerNameLabel.snp.trailing).offset(2.0)
+            $0.bottom.equalTo(writerNameLabel.snp.bottom)
+        }
+        
+        contentsLabel.snp.makeConstraints {
+            $0.leading.equalTo(writerNameLabel.snp.leading)
+            $0.top.equalTo(writerNameLabel.snp.bottom).offset(4.0)
+            $0.trailing.equalToSuperview().inset(superviewMargin)
+        }
+        
+        buttonStackView.snp.makeConstraints {
+            $0.leading.equalTo(writerNameLabel.snp.leading)
+            $0.trailing.equalTo(contentsLabel.snp.trailing)
+            $0.top.equalTo(contentsLabel.snp.bottom).offset(12.0)
+            $0.bottom.equalToSuperview().inset(superviewMargin)
+        }
     }
 }
