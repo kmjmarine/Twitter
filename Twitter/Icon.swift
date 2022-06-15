@@ -20,7 +20,7 @@ enum Icon {
         case .message: return UIImage(systemName: "message")
         case .share: return UIImage(systemName: "square.and.arrow.up")
         case .like: return UIImage(systemName: "heart")
-        case .write: return UIImage(systemName: "squre.and.pencil")
+        case .write: return UIImage(systemName: "square.and.pencil")
         }
         
         return UIImage(systemName: systemName)
