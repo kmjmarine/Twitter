@@ -16,8 +16,8 @@ final class FeedViewController: UIViewController {
         let floaty = Floaty(size: 50.0)
         floaty.sticky = true
         floaty.handleFirstItemDirectly = true
-        floaty.addItem(title: "") { _ in
-            print("Floaty!")
+        floaty.addItem(title: "") { [weak self] _ in
+            self?.presenter.didTabWriteButton()
         }
         floaty.buttonImage = Icon.write.image?.withTintColor(.white, renderingMode: .alwaysOriginal)
         
@@ -31,7 +31,7 @@ final class FeedViewController: UIViewController {
         
         tableView.register(
             FeedTableViewCell.self,
-            forCellReuseIdentifier: FeedTableViewCell.identitier
+            forCellReuseIdentifier: FeedTableViewCell.identifier
         )
         
         return tableView
@@ -55,5 +55,20 @@ extension FeedViewController: FeedProtocol {
         }
         
         writeButton.paddingY = 100.0
+    }
+    
+    func reloadTableView() {
+        tableView.reloadData()
+    }
+    
+    func moveToTweetViewController(with tweet: Tweet) {
+        let tweetViewController = TweetViewController(tweet: tweet)
+        navigationController?.pushViewController(tweetViewController, animated: true)
+    }
+    
+    func moveToWriteViewController() {
+        let writeViewController = UINavigationController(rootViewController: WriteViewController())
+        writeViewController.modalPresentationStyle = .fullScreen
+        present(writeViewController, animated: true)
     }
 }

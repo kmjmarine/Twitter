@@ -11,6 +11,8 @@
 		9DDB70408DD0F07675B5B5C6 /* Pods_Twitter_TwitterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F14C047AD524A8ECCC186242 /* Pods_Twitter_TwitterUITests.framework */; };
 		E5020FCD28594EB7004259A4 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5020FCC28594EB7004259A4 /* FeedTableViewCell.swift */; };
 		E5020FCF28595427004259A4 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5020FCE28595427004259A4 /* Icon.swift */; };
+		E5020FD12859C63E004259A4 /* TweetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5020FD02859C63E004259A4 /* TweetViewController.swift */; };
+		E5020FD32859C65A004259A4 /* TweetPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5020FD22859C65A004259A4 /* TweetPresenter.swift */; };
 		E512A7B8285841980092F3F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E512A7B7285841980092F3F4 /* AppDelegate.swift */; };
 		E512A7BA285841980092F3F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E512A7B9285841980092F3F4 /* SceneDelegate.swift */; };
 		E512A7BC285841980092F3F4 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E512A7BB285841980092F3F4 /* TabBarViewController.swift */; };
@@ -26,6 +28,8 @@
 		E512A7F4285853150092F3F4 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E512A7F3285853150092F3F4 /* FeedViewController.swift */; };
 		E512A7F6285853210092F3F4 /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E512A7F5285853210092F3F4 /* FeedPresenter.swift */; };
 		E512A7F9285859FA0092F3F4 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E512A7F8285859FA0092F3F4 /* TabBarItem.swift */; };
+		E54456FF285AC6F10089DFB2 /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54456FE285AC6F10089DFB2 /* WriteViewController.swift */; };
+		E5445701285AC7050089DFB2 /* WritePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5445700285AC7050089DFB2 /* WritePresenter.swift */; };
 		E794B07F30F6AD0891412D2C /* Pods_TwitterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70A1C94B1D49C4291C62D8E /* Pods_TwitterTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +60,8 @@
 		B70A1C94B1D49C4291C62D8E /* Pods_TwitterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5020FCC28594EB7004259A4 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		E5020FCE28595427004259A4 /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
+		E5020FD02859C63E004259A4 /* TweetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetViewController.swift; sourceTree = "<group>"; };
+		E5020FD22859C65A004259A4 /* TweetPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetPresenter.swift; sourceTree = "<group>"; };
 		E512A7B4285841980092F3F4 /* Twitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E512A7B7285841980092F3F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E512A7B9285841980092F3F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +80,8 @@
 		E512A7F3285853150092F3F4 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		E512A7F5285853210092F3F4 /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
 		E512A7F8285859FA0092F3F4 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		E54456FE285AC6F10089DFB2 /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
+		E5445700285AC7050089DFB2 /* WritePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritePresenter.swift; sourceTree = "<group>"; };
 		F14C047AD524A8ECCC186242 /* Pods_Twitter_TwitterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Twitter_TwitterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F45F216164866CED221AFA93 /* Pods-TwitterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterTests.release.xcconfig"; path = "Target Support Files/Pods-TwitterTests/Pods-TwitterTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,8 +135,16 @@
 				48EB08E7F32522844E7D059B /* Pods-TwitterTests.debug.xcconfig */,
 				F45F216164866CED221AFA93 /* Pods-TwitterTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		E5020FD42859C660004259A4 /* Tweet */ = {
+			isa = PBXGroup;
+			children = (
+				E5020FD02859C63E004259A4 /* TweetViewController.swift */,
+				E5020FD22859C65A004259A4 /* TweetPresenter.swift */,
+			);
+			path = Tweet;
 			sourceTree = "<group>";
 		};
 		E512A7AB285841980092F3F4 = {
@@ -161,6 +177,7 @@
 				E512A7F2285846C80092F3F4 /* Managers */,
 				E512A7EC2858451F0092F3F4 /* Models */,
 				E512A7EF2858452F0092F3F4 /* Scenes */,
+				E5020FCE28595427004259A4 /* Icon.swift */,
 				E512A7C02858419A0092F3F4 /* Assets.xcassets */,
 				E512A7C22858419A0092F3F4 /* LaunchScreen.storyboard */,
 				E512A7C52858419A0092F3F4 /* Info.plist */,
@@ -199,7 +216,8 @@
 			children = (
 				E512A7FA28585A030092F3F4 /* TabBar */,
 				E512A7F72858532A0092F3F4 /* Feed */,
-				E5020FCE28595427004259A4 /* Icon.swift */,
+				E5020FD42859C660004259A4 /* Tweet */,
+				E5445702285AC70B0089DFB2 /* Write */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -229,6 +247,15 @@
 				E512A7BB285841980092F3F4 /* TabBarViewController.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		E5445702285AC70B0089DFB2 /* Write */ = {
+			isa = PBXGroup;
+			children = (
+				E54456FE285AC6F10089DFB2 /* WriteViewController.swift */,
+				E5445700285AC7050089DFB2 /* WritePresenter.swift */,
+			);
+			path = Write;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,7 +355,7 @@
 			);
 			mainGroup = E512A7AB285841980092F3F4;
 			packageReferences = (
-				E512A7E7285841E70092F3F4 /* XCRemoteSwiftPackageReference "SnapKit.git" */,
+				E512A7E7285841E70092F3F4 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = E512A7B5285841980092F3F4 /* Products */;
 			projectDirPath = "";
@@ -479,10 +506,14 @@
 				E512A7B8285841980092F3F4 /* AppDelegate.swift in Sources */,
 				E512A7F6285853210092F3F4 /* FeedPresenter.swift in Sources */,
 				E512A7F9285859FA0092F3F4 /* TabBarItem.swift in Sources */,
+				E5020FD32859C65A004259A4 /* TweetPresenter.swift in Sources */,
 				E512A7F1285846BA0092F3F4 /* UserDefaultsManager.swift in Sources */,
+				E54456FF285AC6F10089DFB2 /* WriteViewController.swift in Sources */,
+				E5445701285AC7050089DFB2 /* WritePresenter.swift in Sources */,
 				E512A7BA285841980092F3F4 /* SceneDelegate.swift in Sources */,
 				E512A7EE2858452B0092F3F4 /* User.swift in Sources */,
 				E512A7EB285845170092F3F4 /* Tweet.swift in Sources */,
+				E5020FD12859C63E004259A4 /* TweetViewController.swift in Sources */,
 				E512A7F4285853150092F3F4 /* FeedViewController.swift in Sources */,
 				E5020FCD28594EB7004259A4 /* FeedTableViewCell.swift in Sources */,
 				E5020FCF28595427004259A4 /* Icon.swift in Sources */,
@@ -827,7 +858,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		E512A7E7285841E70092F3F4 /* XCRemoteSwiftPackageReference "SnapKit.git" */ = {
+		E512A7E7285841E70092F3F4 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -840,7 +871,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		E512A7E8285841E70092F3F4 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E512A7E7285841E70092F3F4 /* XCRemoteSwiftPackageReference "SnapKit.git" */;
+			package = E512A7E7285841E70092F3F4 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */

@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 
 final class FeedTableViewCell: UITableViewCell {
-    static let identitier = "FeedTableViewCell"
+    static let identifier = "FeedTableViewCell"
     
     private lazy var profileImageView: UIImageView = {
         let imageView = UIImageView()
