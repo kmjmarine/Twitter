@@ -14,9 +14,11 @@ protocol WriteProtocol: AnyObject {
 
 final class WritePresenter {
     private weak var viewController: WriteProtocol?
+    private let userDefaultsManager: UserDefaultsManagerProtocol
     
-    init(viewController: WriteProtocol) {
+    init(viewController: WriteProtocol, userDefaultsManager: UserDefaultsManagerProtocol = UserDefaultManager()) {
         self.viewController = viewController
+        self.userDefaultsManager = userDefaultsManager
     }
     
     func viewDidLoad() {
@@ -27,7 +29,9 @@ final class WritePresenter {
         viewController?.dismiss()
     }
     
-    func didTapRightBarButtionItem() {
+    func didTapRightBarButtionItem(text: String) {
+        let tweet = Tweet(user: User.shared, contents: text)
+        userDefaultsManager.setTweet(tweet)
         viewController?.dismiss()
     }
 }

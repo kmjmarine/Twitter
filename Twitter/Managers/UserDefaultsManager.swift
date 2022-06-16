@@ -23,7 +23,7 @@ struct UserDefaultManager: UserDefaultsManagerProtocol {
     
     func getTweet() -> [Tweet] {
         guard let data = UserDefaults.standard.data(forKey: Key.tweet.value) else { return [ ] }
-        
+       
         return (try? PropertyListDecoder().decode([Tweet].self, from: data)) ?? [ ]
     }
     

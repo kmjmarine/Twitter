@@ -53,11 +53,16 @@ final class WriteViewController:UIViewController {
 
 extension WriteViewController: UITextViewDelegate {
     func textViewDidBeginEditing(_ textView: UITextView) {
-        guard textView.textColor == .secondaryLabel
-        else { return }
+        guard textView.textColor == .secondaryLabel else { return }
         
         textView.text = nil
         textView.textColor = .label
+    }
+    
+    func textViewDidChange(_ textView: UITextView) {
+        guard textView.textColor != .secondaryLabel else { return }
+        
+        rightBarButtonItem.isEnabled = !textView.text.isEmpty
     }
 }
 
@@ -90,6 +95,6 @@ private extension WriteViewController {
     }
     
     @objc func didTapRightBarButtonItem() {
-        presenter.didTapRightBarButtionItem()
+        presenter.didTapRightBarButtionItem(text: textView.text)
     }
 }

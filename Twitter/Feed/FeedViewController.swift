@@ -42,6 +42,12 @@ final class FeedViewController: UIViewController {
         
         presenter.viewDidLoad()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        presenter.viewWillAppear()
+    }
 }
 
 extension FeedViewController: FeedProtocol {
