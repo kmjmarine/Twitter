@@ -7,12 +7,27 @@
 
 import Foundation
 
-protocol WriteProtocol: AnyObject {}
+protocol WriteProtocol: AnyObject {
+    func setupViews()
+    func dismiss()
+}
 
 final class WritePresenter {
     private weak var viewController: WriteProtocol?
     
     init(viewController: WriteProtocol) {
         self.viewController = viewController
+    }
+    
+    func viewDidLoad() {
+        viewController?.setupViews()
+    }
+    
+    func didTapLeftBarButtonItem() {
+        viewController?.dismiss()
+    }
+    
+    func didTapRightBarButtionItem() {
+        viewController?.dismiss()
     }
 }
