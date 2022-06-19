@@ -21,13 +21,16 @@
 		E512A7CF2858419A0092F3F4 /* TwitterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E512A7CE2858419A0092F3F4 /* TwitterTests.swift */; };
 		E512A7D92858419A0092F3F4 /* TwitterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E512A7D82858419A0092F3F4 /* TwitterUITests.swift */; };
 		E512A7DB2858419A0092F3F4 /* TwitterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E512A7DA2858419A0092F3F4 /* TwitterUITestsLaunchTests.swift */; };
-		E512A7E9285841E70092F3F4 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E512A7E8285841E70092F3F4 /* SnapKit */; };
 		E512A7EB285845170092F3F4 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E512A7EA285845170092F3F4 /* Tweet.swift */; };
 		E512A7EE2858452B0092F3F4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E512A7ED2858452B0092F3F4 /* User.swift */; };
 		E512A7F1285846BA0092F3F4 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E512A7F0285846BA0092F3F4 /* UserDefaultsManager.swift */; };
 		E512A7F4285853150092F3F4 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E512A7F3285853150092F3F4 /* FeedViewController.swift */; };
 		E512A7F6285853210092F3F4 /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E512A7F5285853210092F3F4 /* FeedPresenter.swift */; };
 		E512A7F9285859FA0092F3F4 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E512A7F8285859FA0092F3F4 /* TabBarItem.swift */; };
+		E512F589285F10B4005053F0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E512F588285F10B4005053F0 /* ProfileViewController.swift */; };
+		E512F58B285F10C4005053F0 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E512F58A285F10C4005053F0 /* ProfilePresenter.swift */; };
+		E543D05B285F253B00E06144 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E543D05A285F253B00E06144 /* SnapKit */; };
+		E543D05D285F254100E06144 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = E543D05C285F254100E06144 /* Toast */; };
 		E54456FF285AC6F10089DFB2 /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54456FE285AC6F10089DFB2 /* WriteViewController.swift */; };
 		E5445701285AC7050089DFB2 /* WritePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5445700285AC7050089DFB2 /* WritePresenter.swift */; };
 		E794B07F30F6AD0891412D2C /* Pods_TwitterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70A1C94B1D49C4291C62D8E /* Pods_TwitterTests.framework */; };
@@ -80,6 +83,8 @@
 		E512A7F3285853150092F3F4 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		E512A7F5285853210092F3F4 /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
 		E512A7F8285859FA0092F3F4 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		E512F588285F10B4005053F0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		E512F58A285F10C4005053F0 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
 		E54456FE285AC6F10089DFB2 /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
 		E5445700285AC7050089DFB2 /* WritePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritePresenter.swift; sourceTree = "<group>"; };
 		F14C047AD524A8ECCC186242 /* Pods_Twitter_TwitterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Twitter_TwitterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,8 +96,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E512A7E9285841E70092F3F4 /* SnapKit in Frameworks */,
+				E543D05D285F254100E06144 /* Toast in Frameworks */,
 				0474F690100EDE2271327037 /* Pods_Twitter.framework in Frameworks */,
+				E543D05B285F253B00E06144 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +224,7 @@
 				E512A7F72858532A0092F3F4 /* Feed */,
 				E5020FD42859C660004259A4 /* Tweet */,
 				E5445702285AC70B0089DFB2 /* Write */,
+				E512F58C285F10CC005053F0 /* Profile */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -249,6 +256,15 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		E512F58C285F10CC005053F0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				E512F588285F10B4005053F0 /* ProfileViewController.swift */,
+				E512F58A285F10C4005053F0 /* ProfilePresenter.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		E5445702285AC70B0089DFB2 /* Write */ = {
 			isa = PBXGroup;
 			children = (
@@ -277,7 +293,8 @@
 			);
 			name = Twitter;
 			packageProductDependencies = (
-				E512A7E8285841E70092F3F4 /* SnapKit */,
+				E543D05A285F253B00E06144 /* SnapKit */,
+				E543D05C285F254100E06144 /* Toast */,
 			);
 			productName = Twitter;
 			productReference = E512A7B4285841980092F3F4 /* Twitter.app */;
@@ -356,6 +373,7 @@
 			mainGroup = E512A7AB285841980092F3F4;
 			packageReferences = (
 				E512A7E7285841E70092F3F4 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				E512F58D285F22FA005053F0 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
 			);
 			productRefGroup = E512A7B5285841980092F3F4 /* Products */;
 			projectDirPath = "";
@@ -508,9 +526,11 @@
 				E512A7F9285859FA0092F3F4 /* TabBarItem.swift in Sources */,
 				E5020FD32859C65A004259A4 /* TweetPresenter.swift in Sources */,
 				E512A7F1285846BA0092F3F4 /* UserDefaultsManager.swift in Sources */,
+				E512F589285F10B4005053F0 /* ProfileViewController.swift in Sources */,
 				E54456FF285AC6F10089DFB2 /* WriteViewController.swift in Sources */,
 				E5445701285AC7050089DFB2 /* WritePresenter.swift in Sources */,
 				E512A7BA285841980092F3F4 /* SceneDelegate.swift in Sources */,
+				E512F58B285F10C4005053F0 /* ProfilePresenter.swift in Sources */,
 				E512A7EE2858452B0092F3F4 /* User.swift in Sources */,
 				E512A7EB285845170092F3F4 /* Tweet.swift in Sources */,
 				E5020FD12859C63E004259A4 /* TweetViewController.swift in Sources */,
@@ -866,13 +886,26 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		E512F58D285F22FA005053F0 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E512A7E8285841E70092F3F4 /* SnapKit */ = {
+		E543D05A285F253B00E06144 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E512A7E7285841E70092F3F4 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		E543D05C285F254100E06144 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E512F58D285F22FA005053F0 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
